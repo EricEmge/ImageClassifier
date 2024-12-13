@@ -35,7 +35,7 @@ model = Sequential([
     Conv2D(64, (3, 3), activation="relu"),
     MaxPooling2D((2, 2)),
     Flatten(),
-    Dense(128, activation="relu"),
+    Dense(64, activation="relu"),
     Dense(len(train_generator.class_indices), activation="softmax")
 ])
 
